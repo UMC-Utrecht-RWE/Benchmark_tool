@@ -24,7 +24,7 @@ check_equal <- function(values) {
 pre_dir <- paste0(projectFolder,"/source/p_steps/")
 #execute different implementations for the same problem 100x each
 mbm <- microbenchmark( "a" = { a <- 1+2 },
-                       "b" = { b <- 1+2 },
+                       "b" = { b <- 1+1+1 },
                        # "c" = { c <- source(paste0(pre_dir, "/function_1.R")) },
                        check = check_equal,
                        times = 100
